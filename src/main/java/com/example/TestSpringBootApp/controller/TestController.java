@@ -1,4 +1,4 @@
-package com.example.TestSpringBootApp.Controller;
+package com.example.TestSpringBootApp.controller;
 
 import com.example.TestSpringBootApp.Util.Util;
 import com.example.TestSpringBootApp.dto.LicenseRequestDto;

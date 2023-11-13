@@ -15,6 +15,9 @@ import java.util.Base64;
 
 public class Util {
 
+    public static String[] users = {"admin", "yusuf", "ruby"};
+    public static String[] pass =  {"admin", "yusuf", "ruby"};
+    public static String[] role =  {"admin", "admin", "admin"};
     private static String LICENSE_IV = "4f674951b97c7fb0";
     private static String LICENSE_SALT = "f9thsu";
     private static String LICENSE_ALGORITHM = "AES";
