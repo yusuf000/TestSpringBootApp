@@ -24,7 +24,7 @@ public class SecurityConfig {
         jwtAuthenticationConverter.setJwtGrantedAuthoritiesConverter(new JwtRoleConverter());
         http
                 .authorizeHttpRequests(authorizeRequests -> authorizeRequests
-                        .requestMatchers(new AntPathRequestMatcher("/test2")).authenticated()
+                        .requestMatchers(new AntPathRequestMatcher("/test2/**")).authenticated()
                         .anyRequest().permitAll())
                 .oauth2ResourceServer((oauth2) -> oauth2
                         .jwt(jwt -> jwt.jwtAuthenticationConverter(jwtAuthenticationConverter)))
