@@ -30,6 +30,5 @@ public class SecurityConfig {
                         .jwt(jwt -> jwt.jwtAuthenticationConverter(jwtAuthenticationConverter)))
                 .csrf(AbstractHttpConfigurer::disable);
         return  http.build();
-
     }
 }

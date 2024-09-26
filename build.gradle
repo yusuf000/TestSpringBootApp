@@ -19,12 +19,16 @@ configurations {
 
 repositories {
 	mavenCentral()
+	maven {url "https://repository.aspose.com/repo/" }
 }
+
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.security:spring-security-core'
 	implementation 'org.springframework.security:spring-security-oauth2-authorization-server'
+	implementation (group: 'com.aspose',name: 'aspose-pdf',	version: '20.5', classifier: 'jdk17')
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:3.3.3'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
